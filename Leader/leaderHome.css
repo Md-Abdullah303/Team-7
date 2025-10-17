@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+/* header st here  */
+
+header ul{
+    display: flex;
+    justify-content: center;
+}
+header ul a{
+    z-index: 10;
+    text-decoration: none;
+    padding: 15px ;
+    margin: 15px 15px;
+    border-radius: 30px;
+    color: black;
+    font-size: 1.2rem;
+}
+header ul a:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+
+
+/* main st here  */
+
+main{
+    height: 89.4vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contantICON{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    position: relative;
+    top: -150px;
+    margin: 0 20px;
+}
+.contantICON i{
+    padding: 8px;
+    font-size: 3.4rem;
+}
+
+.contant{
+    /* z-index: 9.3; */
+    width: 740px;
+}
+.contant h2{
+    font-family: "Sansation", sans-serif;
+    font-size: 4rem;
+    /* z-index: 8; */
+}
+.contant p{
+    font-size: 1.4rem;
+    z-index: 9;
+}
+.learnMore{
+    height: 35px;
+    width: 125px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.learnMore:hover{
+    background-color: rgb(13, 209, 209);
+}
+.learnMore a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.795);
+}
+.contantPic{
+    z-index: 9;
+    
+}
+.contantPic img{
+    width: 535px;
+    position: relative;
+    left: 150px;
+
+    opacity: 0;
+    transform: translateX(200px);
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
+
+
+.sercel{
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+    left: 1150px;
+    top: 0px;
+
+
+    clip-path: polygon(
+        50% 0%, 55% 6%, 60% 0%, 65% 6%, 70% 0%, 75% 6%, 80% 0%, 85% 6%,
+        90% 0%, 95% 6%, 100% 10%, 95% 15%, 100% 20%, 95% 25%, 100% 30%, 95% 35%,
+        100% 40%, 95% 45%, 100% 50%, 95% 55%, 100% 60%, 95% 65%, 100% 70%, 95% 75%,
+        100% 80%, 95% 85%, 100% 90%, 95% 95%, 90% 100%, 85% 95%, 80% 100%, 75% 95%,
+        70% 100%, 65% 95%, 60% 100%, 55% 95%, 50% 100%, 45% 95%, 40% 100%, 35% 95%,
+        30% 100%, 25% 95%, 20% 100%, 15% 95%, 10% 100%, 5% 95%, 0% 90%, 5% 85%,
+        0% 80%, 5% 75%, 0% 70%, 5% 65%, 0% 60%, 5% 55%, 0% 50%, 5% 45%, 0% 40%,
+        5% 35%, 0% 30%, 5% 25%, 0% 20%, 5% 15%, 0% 10%, 5% 6%, 10% 0%, 15% 6%, 20% 0%, 25% 6%, 30% 0%, 35% 6%, 40% 0%, 45% 6%
+    );
+    animation: rotateSpiky 10s linear infinite;
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes for animation */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rotateSpiky {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
