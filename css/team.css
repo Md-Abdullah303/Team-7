@@ -160,3 +160,81 @@ main {
     width: 10px;
     
 }
+
+
+.contant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 89vh;
+    width:88vw ;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.contant::-webkit-scrollbar-thumb {
+    /* height: 20px; */
+    border-radius: 25px;
+    background: #50505c;
+}
+.contant::-webkit-scrollbar {
+    width: 10px;
+}
+.contantbox{
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    background-color: #50505c;
+    margin: 20px;
+    width: 65vw;
+    border-radius: 25px;
+    display: flex;
+
+}
+.contantleft{
+    width: 50vw;
+    /* border: 1px solid; */
+}
+.contantleft h1{
+    /* margin: 40px ; */
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 4rem;
+    color: #ff9900;
+}
+.contantleft h2{
+    margin: 5px 40px ;
+    font-size: 3rem;
+    color: #ff9900;
+}
+.contantleft p{
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 600px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.774);
+}
+.go{
+    height: 50px;
+    width: 70px;
+    background-color: rgb(0, 140, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 40px;
+
+}
+.go a{
+    text-decoration: none;
+    color: #fff;
+}
+.contantright{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contantright img{
+    border-radius: 8px;
+    width: 250px;
+}
