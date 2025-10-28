@@ -219,7 +219,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
 .id:hover{
     animation: uper-slid .5s 1 alternate forwards;
@@ -246,6 +246,7 @@ main {
 .idContant {
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
