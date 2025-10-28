@@ -8,8 +8,11 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
-
+body{
+    overflow: hidden;
+}
 
 
 
@@ -93,9 +96,9 @@ main{
     
 }
 .contantPic img{
-    width: 535px;
+    min-width: 500px;
     position: relative;
-    left: 150px;
+    left: 40px;
 
     opacity: 0;
     transform: translateX(200px);
@@ -110,8 +113,10 @@ main{
     border-radius: 50%;
     background-color: aqua;
     position: absolute;
-    left: 1150px;
+    /* left: 1150px; */
+    right: -450px;
     top: 0px;
+    overflow: hidden;
 
 
     clip-path: polygon(
@@ -149,6 +154,7 @@ main{
     100% {
         opacity: 1;
         transform: translateX(0);
+
     }
 }
 @keyframes rotateSpiky {
@@ -157,5 +163,6 @@ main{
     }
     100% {
         transform: rotate(360deg);
+        /* overflow: hidden; */
     }
 }
