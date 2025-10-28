@@ -27,11 +27,14 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    /* width: 100px; */
+    max-width: 100px;
 }
 
 header ul {
-    margin-left: 1100px;
+    margin-left: 55rem;
+    display: flex;
+    align-items: center;
 }
 
 header ul a {
