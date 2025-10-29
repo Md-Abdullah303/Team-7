@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sill's</title>
     <link rel="stylesheet" href="skills.css">
 </head>
+
 <body>
     <header>
         <ul>
@@ -17,11 +19,67 @@
     </header>
     <main>
         <div class="skillcontanir">
+
             <div class="skillbox">
-                
+                <h2>HTML</h2>
+                <p>I have excellent knowledge in HTML and can build clean structured web pages.</p>
+                <div class="skillbar"><span style="width: 100%;">100%</span></div>
             </div>
-            <div class="skillbox"></div>
+
+            <div class="skillbox">
+                <h2>CSS</h2>
+                <p>I can style modern responsive websites with strong CSS skills.</p>
+                <div class="skillbar"><span style="width: 85%;">85%</span></div>
+            </div>
+
+            <div class="skillbox">
+                <h2>JavaScript</h2>
+                <p>Good understanding of JavaScript to make websites dynamic.</p>
+                <div class="skillbar"><span style="width: 79%;">79%</span></div>
+            </div>
+
+            <div class="skillbox">
+                <h2>Bootstrap</h2>
+                <p>Can build responsive websites fast using Bootstrap framework.</p>
+                <div class="skillbar"><span style="width: 70%;">70%</span></div>
+            </div>
+
+            <div class="skillbox">
+                <h2>React</h2>
+                <p>Learning React to build advanced UI components.</p>
+                <div class="skillbar"><span style="width: 60%;">60%</span></div>
+            </div>
+
+            <div class="skillbox">
+                <h2>PHP</h2>
+                <p>Basic PHP knowledge for backend development.</p>
+                <div class="skillbar"><span style="width: 50%;">50%</span></div>
+            </div>
+
         </div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skills = document.querySelectorAll(".skill-per");
+
+            skills.forEach(skill => {
+                let finalPercent = parseInt(skill.getAttribute("data-per"));
+                let current = 0;
+                skill.style.width = "0%";
+
+                let timer = setInterval(() => {
+                    current++;
+                    skill.style.width = current + "%";
+                    skill.textContent = current + "%";
+
+                    if (current >= finalPercent) {
+                        clearInterval(timer);
+                    }
+                }, 15);
+            });
+        });
+    </script>
+
 </body>
+
 </html>
