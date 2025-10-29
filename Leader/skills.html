@@ -58,28 +58,6 @@
 
         </div>
     </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const skills = document.querySelectorAll(".skill-per");
-
-            skills.forEach(skill => {
-                let finalPercent = parseInt(skill.getAttribute("data-per"));
-                let current = 0;
-                skill.style.width = "0%";
-
-                let timer = setInterval(() => {
-                    current++;
-                    skill.style.width = current + "%";
-                    skill.textContent = current + "%";
-
-                    if (current >= finalPercent) {
-                        clearInterval(timer);
-                    }
-                }, 15);
-            });
-        });
-    </script>
-
 </body>
 
 </html>
