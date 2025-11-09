@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Portfolio - Your Name</title>
+  <meta name="description" content="College project portfolio" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071026 0%,var(--bg) 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:var(--maxw);margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#022}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:28px}
+    .intro h1{font-size:clamp(26px,4vw,40px);margin:0 0 8px}
+    .intro p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#012;border:0;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid var(--glass);color:var(--muted)}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    /* Projects grid */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+    .project .tags{display:flex;gap:8px;margin-top:12px}
+    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:var(--glass);color:var(--muted)}
+ 
+    /* ski lls */
+    .skill s{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .skill {background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    /* contact */
+    form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    input::placeholder,textarea::placeholder{color:var(--muted)}
+    button[type=submit]{width:fit-content}
+
+    footer{margin-top:36px;padding:18px 0;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.brand .logo{width:44px;height:44px}.container{padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">YR</div>
+        <div>
+          <div style="font-weight:700">Your name</div>
+          <div style="font-size:12px;color:var(--muted)">Departman of Computer Science — Chandpur Polytechnic Institute</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro card">
+        <h1>Hello — I’m<span style="color:var(--accent)">Ahsan Habib</span></h1>
+        <p>I am a college student building web & software projects. This portfolio highlights selected projects, skills, and ways to contact me. Replace text and project cards with your own work.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div style="margin-top:18px">
+          <strong>Current focus:</strong>
+          <div class="skills" aria-hidden>
+            <div class="skill">Web Dev</div>
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">UI/UX</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin:0 0 8px">Quick Info</h3>
+        <p style="color:var(--muted);margin:0 0 12px">Location: Cumilla,Bangladesh<br/>Email:expartonit11@gmail.com <a href="mailto:youremail@example.com" style="color:var(--accent);text-decoration:none">youremail@example.com</a></p>
+        <h4 style="margin:8px 0">Education</h4>
+        <p style="color:var(--muted);margin:0">Departman of Computer Science — Chandpur Polytechnic Institute<br/>Running Student</p>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:26px">
+      <h2 style="margin:0 0 12px">Selected Projects</h2>
+      <div class="projects">
+        <article class="project card">
+          <h3 style="margin:0">Project Title One</h3>
+          <p style="color:var(--muted);margin:8px 0 0">Short description: what it does, tech used, and your role.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <a class="btn" href="#" target="_blank">Live</a>
+            <a class="btn ghost" href="#" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h3 style="margin:0">Project Title Two</h3>
+          <p style="color:var(--muted);margin:8px 0 0">Short description: e.g., data analysis, ML model, or mobile app.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <a class="btn" href="#" target="_blank">Demo</a>
+            <a class="btn ghost" href="#" target="_blank">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" style="margin-top:26px">
+      <h2 style="margin:0 0 12px">Skills & Tools</h2>
+      <div class="card">
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <div style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 8px">Languages</h4>
+            <p style="color:var(--muted);margin:0">HTML, CSS, JavaScript, Python, SQL</p>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 8px">Frameworks & Tools</h4>
+            <p style="color:var(--muted);margin:0">React, Flask, Bootstrap, Git, Figma</p>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 8px">Other</h4>
+            <p style="color:var(--muted);margin:0">Data Analysis, ML basics, REST APIs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <h2 style="margin:0 0 12px">Contact</h2>
+      <div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+        <div>
+          <p style="color:var(--muted)">Want to discuss a project, internship, or collaboration? Send a message.</p>
+          <form onsubmit="handleSubmit(event)">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+        <aside style="align-self:start">
+          <h4 style="margin:0 0 8px">Quick links</h4>
+          <p style="color:var(--muted);margin:0 0 12px">Resume, GitHub, LinkedIn</p>
+          <ul style="color:var(--muted);padding-left:18px;margin:0">
+            <li><a href="#" style="color:var(--accent);text-decoration:none">Download Resume</a></li>
+            <li><a href="#" style="color:var(--accent);text-decoration:none">GitHub</a></li>
+            <li><a href="#" style="color:var(--accent);text-decoration:none">LinkedIn</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>Made with ❤ — Ahsan Habib • © <span id="year"></span></div>
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const f = e.target;
+      alert('Thank you, ' + f.name.value + '! Your message was not really sent in this demo. Replace handleSubmit with real logic.');
+      f.reset();
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
