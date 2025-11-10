@@ -244,3 +244,15 @@ main {
     margin-top: 50px;
 
 }
+
+
+
+/* যখন কেউ search করে, match গুলা light glow effect পাবে */
+.contantbox {
+    transition: all 0.3s ease;
+}
+
+.contantbox.highlight {
+    box-shadow: 0 0 20px rgba(255, 217, 0, 0.6);
+    transform: scale(1.02);
+}

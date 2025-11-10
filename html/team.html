@@ -79,6 +79,10 @@
                     <i class="fa-solid fa-user"></i>
                     <a href="/html/Ahsan.html" style="font-size: 1rem;">Ahsan Habib</a>
                 </div>
+                <div class="sidebox">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="/html/miraz.html">MIRAZ</a>
+                </div>
             </div>
         </div>
         <div class="contant">
@@ -133,16 +137,46 @@
                 <div class="contantleft">
                     <h1>Ahsan Habib</h1>
                     <h2>Web Developer</h2>
-                    <p>Creative web developer skilled in HTML, CSS, and JavaScript. Passionate about building responsive, user-friendly websites and continuous learning.</p>
+                    <p>Creative web developer skilled in HTML, CSS, and JavaScript. Passionate about building
+                        responsive, user-friendly websites and continuous learning.</p>
                     <div class="go"><a href="/html/Ahsan.html">Go</a></div>
                 </div>
                 <div class="contantright">
                     <img src="../img/ahsan habib.jpg" alt="">
                 </div>
             </div>
+            <div class=" contantbox">
+                <div class="contantleft">
+                    <h1>MIRAZ</h1>
+                    <h2>Web Developer</h2>
+                    <p>Web developer skilled in HTML, CSS. Passionate about building responsive, user-friendly websites
+                        and continuous learning.</p>
+                    <div class="go"><a href="/html/miraz.html">Go</a></div>
+                </div>
+                <div class="contantright">
+                    <img src="../img/mirazPic.jpg" alt="">
+                </div>
+            </div>
 
         </div>
     </main>
 </body>
+<script>
+    const searchInput = document.querySelector('.searchbar input');
+    const teamBoxes = document.querySelectorAll('.contantbox');
+
+    searchInput.addEventListener('keyup', function () {
+        const filter = this.value.toLowerCase().trim();
+
+        teamBoxes.forEach(box => {
+            const name = box.querySelector('.contantleft h1').textContent.toLowerCase();
+            if (name.includes(filter)) {
+                box.style.display = "flex";  // show match
+            } else {
+                box.style.display = "none";  // hide non-match
+            }
+        });
+    });
+</script>
 
 </html>
