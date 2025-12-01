@@ -291,3 +291,156 @@ main {
         box-shadow: 0 0 5px 1px white;
     }
 }
+
+
+/* -----------------------
+   📱 MOBILE (max 600px)
+------------------------*/
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nev2 {
+        margin: 0;
+    }
+
+    .nev2 a {
+        font-size: 1.1rem;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .searchbar {
+        width: 260px;
+        height: 40px;
+    }
+    .searchbar input {
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    /* main layout */
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* sidenav collapse */
+    .sidenav {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+
+    .sidenavbox {
+        height: auto;
+        overflow: visible;
+        padding-bottom: 15px;
+    }
+
+    .sidebox {
+        width: 90%;
+        height: 50px;
+        margin: 8px auto;
+    }
+
+    .sidebox a {
+        font-size: 1.1rem;
+    }
+
+    /* main content layout */
+    .maincontant {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .teamName img {
+        width: 120px;
+    }
+
+    .idBoxs {
+        width: 90%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .memberID {
+        grid-template-columns: auto;
+        margin: 0 30px;
+        justify-content: center;
+    }
+
+    .id {
+        width: 140px;
+        height: 180px;
+    }
+
+}
+
+
+/* ----------------------------
+   📱📱 Tablet (600px – 900px)
+-----------------------------*/
+@media (min-width: 600px) and (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nev2 a {
+        font-size: 1.3rem;
+        margin: 8px;
+    }
+
+    main {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .sidenav {
+        width: 180px;
+    }
+
+    .maincontant {
+        flex-direction: column;
+        width: calc(100% - 180px);
+        padding: 20px 0;
+    }
+
+    .idBoxs {
+        width: 75%;
+    }
+
+    .memberID {
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+    }
+}
+
+
+/* ----------------------------
+   💻 Laptop (900px – 1200px)
+-----------------------------*/
+@media (min-width: 900px) and (max-width: 1200px) {
+
+    .nev2 {
+        margin: 0 10vw;
+    }
+
+    .idBoxs {
+        width: 450px;
+    }
+
+    .memberID {
+        grid-template-columns: auto auto;
+    }
+}
