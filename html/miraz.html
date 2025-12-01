@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfulio </title>
     <style>
-        body{
-            margin:0;
-            font-family:'Segoe UI',sans-serif ;
-            background:#fffaf9;
+        /* backBtn */
+        .backBtn {
+            position: fixed;
+            height: 50px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            background-color: black;
+            margin: 20px;
+        }
+
+        .backBtn a {
+            padding: 20;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #fffaf9;
             color: #222;
         }
-        header{
+
+        header {
             background: #0f1b4c;
             color: white;
             display: flex;
@@ -20,14 +41,16 @@
             align-items: center;
 
         }
-        nav a{
+
+        nav a {
             color: white;
             margin-left: 20px;
             text-decoration: none;
             font-weight: bold;
 
         }
-        .hero{
+
+        .hero {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,45 +58,53 @@
             gap: 40px;
             background: #fff;
         }
-        .hero img{
+
+        .hero img {
             width: 200px;
             border-radius: 10px;
-            box-shadow: 0 0 10 px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10 px rgba(0, 0, 0, 0.1);
         }
-        .intro h2{
+
+        .intro h2 {
             margin-bottom: 10px;
             font-size: 28px;
             color: #0f1b4c;
 
         }
-        .projects{
+
+        .projects {
             padding: 40px 60px;
         }
-        .projects h3{
+
+        .projects h3 {
             font-size: 24px;
             color: #0f1b4c;
             margin-bottom: 20px;
 
         }
-        .projects ul{
+
+        .projects ul {
             list-style: none;
             padding: 0;
         }
-        .projects li{
+
+        .projects li {
             margin-bottom: 10px;
             font-size: 18px;
         }
-        footer{
+
+        footer {
             text-align: center;
             padding: 15px;
             background: #eee;
             font-size: 14px;
 
         }
-
     </style>
 </head>
+
 <body>
+    <div class="backBtn"><a href="/home.html"><- HOME</a></div>
     <header>
         <h1>MD RIYAZUL MIRAZ </h1>
         <nav>
@@ -84,7 +115,8 @@
         </nav>
     </header>
     <section class="hero">
-        <img src="https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-6/472121591_916050253929382_5666040905791708143_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH58SPU2w0zWHNKzKVAeKnkDUhsTjQ-pzwNSGxOND6nPCM990zr2sgqVAUL7SXWDteTQc9FSoxFnERxZzIe4wHv&_nc_ohc=hVznkpHKAF8Q7kNvwHMGFAv&_nc_oc=AdnRD06uW5q7R9cZvN4KKrNvtNd05B0AbPCFt1DxGGc9hYK4lgfw9gEuf4pPWqzL1sg&_nc_zt=23&_nc_ht=scontent.fdac5-2.fna&_nc_gid=jLIclXGzGQvHUxe096WNnA&oh=00_Afh4myBr1I-JIiWoCAjW3btLFo6DmSRG6hjisiXsN7oZjg&oe=6916D780"width="16000">
+        <img src="https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-6/472121591_916050253929382_5666040905791708143_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH58SPU2w0zWHNKzKVAeKnkDUhsTjQ-pzwNSGxOND6nPCM990zr2sgqVAUL7SXWDteTQc9FSoxFnERxZzIe4wHv&_nc_ohc=hVznkpHKAF8Q7kNvwHMGFAv&_nc_oc=AdnRD06uW5q7R9cZvN4KKrNvtNd05B0AbPCFt1DxGGc9hYK4lgfw9gEuf4pPWqzL1sg&_nc_zt=23&_nc_ht=scontent.fdac5-2.fna&_nc_gid=jLIclXGzGQvHUxe096WNnA&oh=00_Afh4myBr1I-JIiWoCAjW3btLFo6DmSRG6hjisiXsN7oZjg&oe=6916D780"
+            width="16000">
         <div class="intro">
             <h2>Hi,I'm a Web Developer </h2>
             <P> A Passionate Web Devloper Crafting Modern Websites Using HTML & css.</P>
@@ -93,7 +125,7 @@
 
         </div>
     </section>
-    <section class ="projects">
+    <section class="projects">
         <h3>MY projects</h3>
         <ul>
             <li>💻 Portfolio website</li>
@@ -105,6 +137,7 @@
         <p>📧riyazulmiraz@gamil.com/@2025 </p>
         <p> contact : 01819782519 </p>
     </footer>
-    
+
 </body>
+
 </html>
